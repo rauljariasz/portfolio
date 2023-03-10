@@ -55,7 +55,7 @@ const Home = () => {
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
             className='mb-8 max-w-lg mx-auto md:mx-0'>
-              Venezuelan Jr Front-end Developer.<br /> Constantly learning and building.
+              Venezuelan, Front-end Developer.<br /> Constantly learning and building.
             </motion.p>
             <motion.div 
             variants={fadeIn('up', 0.6)} 
