@@ -6,7 +6,8 @@ import { motion } from 'framer-motion';
 // variant
 import { fadeIn } from '../variants';
 /* Img */
-import email from '../assets/email.gif';
+import email from '../assets/Getintouch.gif';
+import emailSend from '../assets/email.gif';
 /* icons */
 import { FaUser } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
@@ -15,6 +16,13 @@ import { MdEmail } from 'react-icons/md'
 
 const ContactUs = () => {
   const form = useRef();
+  const formDiv = useRef();
+  const tyDiv = useRef();
+
+  const hideFormDiv = () => {
+    formDiv.current.classList.add('hidden')
+    tyDiv.current.classList.remove('hidden')
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,6 +30,7 @@ const ContactUs = () => {
     emailjs.sendForm('service_ebenivs', 'template_jh0np6f', form.current, 'tXFVXq5LhAGqQoWKT')
       .then((result) => {
           console.log(result.text);
+          hideFormDiv();
       }, (error) => {
           console.log(error.text);
       });
@@ -30,7 +39,7 @@ const ContactUs = () => {
   return (
     <section id='contact'>
       <div className='container mx-auto'>
-        <motion.h2 
+        <motion.h2
           variants={fadeIn('up', 0.4)} 
           initial="hidden" 
           whileInView={'show'} 
@@ -38,12 +47,15 @@ const ContactUs = () => {
           className='h2 text-accent text-center pt-[45px]'>
             GET IT TOUCH
         </motion.h2>
+
+
         <motion.div 
         variants={fadeIn('up', 0.4)} 
         initial="hidden" 
         whileInView={'show'} 
         viewport={{once: false, amount: 0.1}}
-        className='flex flex-col h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white rounded-xl bg-black md:flex-row'>
+        className='flex flex-col h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white rounded-xl bg-black md:flex-row'
+        ref={formDiv}>
           {/* Image */}
           <div className='flex justify-center items-center pt-[10px] h-[40%] md:w-1/2 md:h-full'>
             <img src={email} alt='Email' className='h-full max-h-[330px]' />
@@ -53,6 +65,7 @@ const ContactUs = () => {
           <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-y-[15px] justify-center items-center h-full'>
             <div className='w-[80%] h-[40px] relative'>
               <input 
+              required
               type="text" 
               name="user_name" 
               placeholder='Your Name'
@@ -63,6 +76,7 @@ const ContactUs = () => {
             </div>
             <div className='w-[80%] h-[40px] relative'>
               <input 
+              required
               type="email" 
               name="user_email" 
               placeholder='Your E-mail'
@@ -71,9 +85,27 @@ const ContactUs = () => {
                 <MdEmail  />
               </i>
             </div>
-            <textarea name="message" placeholder='Message' className='resize-none onFocus rounded-xl w-[80%] scrollbar-none sm:h-[200px]' />
-            <input type="submit" value="Send" className='btn btn:hover w-[120px]' />
+            <textarea required name="message" placeholder='Message' className='resize-none onFocus rounded-xl w-[80%] scrollbar-none sm:h-[200px]' />
+            <input type="submit" value="Send" className='cursor-pointer btn btn:hover w-[120px]' />
           </form>
+          </div>
+        </motion.div>
+
+        <motion.div 
+        variants={fadeIn('left', 0.3)} 
+        initial="hidden" 
+        whileInView={'show'} 
+        viewport={{once: false, amount: 0.1}}
+        className='flex flex-col h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white rounded-xl bg-black hidden'
+        ref={tyDiv}>
+          <div className='w-full text-center pt-[10px]'>
+            <p>
+              E-mail Send.
+            </p>
+          </div>
+
+          <div className='flex justify-center items-center h-full'>
+            <img src={emailSend} alt='Email' className='h-full max-h-[330px]' />
           </div>
         </motion.div>
       </div>

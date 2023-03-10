@@ -16,7 +16,7 @@ const Footer = () => {
             <a href='https://www.linkedin.com/in/rauljariasz/' rel='noreferrer' target='_blank'>
               <FaLinkedin />
             </a>
-            <a href='https://github.com/rauljariasz' rel='noreferrer' target='_blank'>
+            <a href='https://wa.me/qr/7HNPJPAPNTXYJ1' rel='noreferrer' target='_blank'>
               <IoLogoWhatsapp />
             </a>
             <a href='https://www.instagram.com/rauljariasz/' target='_blank' rel='noreferrer'>

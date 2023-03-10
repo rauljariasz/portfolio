@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 // variant
 import { fadeIn } from '../variants';
 
+/*  */
+import { Link } from 'react-scroll';
+
 const About = () => {
   return (
     <section id='about' className='section'>
@@ -32,7 +35,14 @@ const About = () => {
             </p>
             {/* stats */}
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'>Contact me</button>
+              <Link 
+              to='contact' 
+              smooth={true} 
+              activeClass='active' 
+              spy={true} 
+              className='cursor-pointer btn btn-lg flex items-center justify-center'>
+                Contact me
+              </Link>
               <a href='https://github.com/rauljariasz' rel='noreferrer' target='_blank' className='text-gradient btn-link'>
                 Download CV
               </a>

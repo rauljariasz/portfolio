@@ -12,6 +12,8 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../variants';
+/* link */
+import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
@@ -61,7 +63,14 @@ const Home = () => {
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
             className='flex max-w-max gap-x-6 items-center mb-12 mx-auto md:mx-0'>
-              <button className='btn btn-sm'>Contact me</button>
+              <Link 
+              to='contact' 
+              className='cursor-pointer btn btn-lg flex items-center justify-center' 
+              smooth={true} 
+              activeClass='active' 
+              spy={true}>
+                Contact me
+              </Link>
               <a href='https://github.com/rauljariasz' rel='noreferrer' target='_blank' className='text-gradient btn-link'>
                 Download CV
               </a>

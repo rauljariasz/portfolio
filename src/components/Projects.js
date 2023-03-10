@@ -25,7 +25,7 @@ const Projects = () => {
       image: project1,
       description: 'Personal project carried out with the purpose of offering my services as a developer. Also for the purpose of anyone can use it as a template.',
       liveSite: '#',
-      codeSite: 'https://github.com/rauljariasz',
+      codeSite: 'https://github.com/rauljariasz/portfolio',
       /* Max 4 */
       buildWith: [<DiReact/>, <SiTailwindcss/>, <TbBrandFramerMotion />]
     },
