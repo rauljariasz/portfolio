@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9bb233e5.css",
+    "main.css": "/portfolio/static/css/main.a3a2b5fd.css",
     "main.js": "/portfolio/static/js/main.9dd625d7.js",
     "static/media/animation.gif": "/portfolio/static/media/animation.3e8cfeb897972387467f.gif",
-    "static/media/bg-about.png": "/portfolio/static/media/bg-about.77c9eac3900fa69dd07e.png",
     "static/media/email.gif": "/portfolio/static/media/email.38a6ef3452b2160a6406.gif",
     "static/media/Getintouch.gif": "/portfolio/static/media/Getintouch.83b083edddbb63ff8b15.gif",
+    "static/media/bg-about.png": "/portfolio/static/media/bg-about.806f78e9641c5c9ae9d8.png",
     "static/media/project1.png": "/portfolio/static/media/project1.5e1f7ec56348aecc0e60.png",
     "static/media/animation-skills.png": "/portfolio/static/media/animation-skills.86a2aebf22760596cae9.png",
     "static/media/project2.png": "/portfolio/static/media/project2.284568dbbc03925db3ff.png",
     "static/media/bg.jpg": "/portfolio/static/media/bg.eeace1bc1a5e9b8bb754.jpg",
     "static/media/logo.png": "/portfolio/static/media/logo.3851483a3ac8406cacf8.png",
     "index.html": "/portfolio/index.html",
-    "main.9bb233e5.css.map": "/portfolio/static/css/main.9bb233e5.css.map",
+    "main.a3a2b5fd.css.map": "/portfolio/static/css/main.a3a2b5fd.css.map",
     "main.9dd625d7.js.map": "/portfolio/static/js/main.9dd625d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bb233e5.css",
+    "static/css/main.a3a2b5fd.css",
     "static/js/main.9dd625d7.js"
   ]
 }
