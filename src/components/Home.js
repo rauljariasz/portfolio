@@ -55,7 +55,7 @@ const Home = () => {
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
             className='mb-8 max-w-lg mx-auto md:mx-0'>
-              Venezuelan, Front-end Developer.<br /> Constantly learning and building.
+              A passionate Front-end Developer.<br /> Based in Aragua, Venezuela 📍.
             </motion.p>
             <motion.div 
             variants={fadeIn('up', 0.6)} 
@@ -71,7 +71,7 @@ const Home = () => {
               spy={true}>
                 Contact me
               </Link>
-              <a href='https://github.com/rauljariasz' rel='noreferrer' target='_blank' className='text-gradient btn-link'>
+              <a href='https://drive.google.com/file/d/1nwkZdE0bPKnT9csTklZUIN9pMbK-zQyL/view' rel='noreferrer' target='_blank' className='text-gradient btn-link'>
                 Download CV
               </a>
             </motion.div>

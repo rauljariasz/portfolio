@@ -29,7 +29,7 @@ const About = () => {
           viewport={{once: false, amount: 0.1}}
           className='flex-1 lg:w-1/2'>
             <h2 className='h2 text-accent'>About me.</h2>
-            <h3 className='h3 mb-4'>I'm a Freelance Front-end Developer with about 1 year of experience.</h3>
+            <h3 className='h3 mb-4'>I'm a Front-end Developer with about 1 year of experience.</h3>
             <p className='mb-6'>
             I'm a Full Stack Developer <span className='text-accent font-bold'>student</span>, passionate about web development and technology. Currently I've solid knowledge as a frontend developer... I'm constantly studying, learning and experimenting with technologies/tools to find the best solutions...  Looking to join a company to contribute to the progress of the project, apply/improve my skills and grow up my career.
             </p>
@@ -43,7 +43,7 @@ const About = () => {
               className='cursor-pointer btn btn-lg flex items-center justify-center'>
                 Contact me
               </Link>
-              <a href='https://github.com/rauljariasz' rel='noreferrer' target='_blank' className='text-gradient btn-link'>
+              <a href='https://drive.google.com/file/d/1nwkZdE0bPKnT9csTklZUIN9pMbK-zQyL/view' rel='noreferrer' target='_blank' className='text-gradient btn-link'>
                 Download CV
               </a>
             </div>

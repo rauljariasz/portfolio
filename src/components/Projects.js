@@ -23,7 +23,7 @@ const Projects = () => {
     {
       titulo: 'Portfolio',
       image: project1,
-      description: 'Personal project carried out with the purpose of offering my services as a developer. Also for the purpose of anyone can use it as a template.',
+      description: 'Personal project carried out with the purpose of offering my services as a developer.',
       liveSite: '#',
       codeSite: 'https://github.com/rauljariasz/portfolio',
       /* Max 4 */
