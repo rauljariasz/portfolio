@@ -4,6 +4,7 @@ import Image from '../assets/animation.gif';
 import { FaGithub, FaLinkedin, FaHackerrank } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { SiFrontendmentor } from 'react-icons/si';
+import { IoLogoWhatsapp } from 'react-icons/io'
 // type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -34,11 +35,10 @@ const Home = () => {
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
             className='mb-6 text-[36px] md:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-white mr-3'>I am a</span>
               <TypeAnimation sequence={[
-                'Frontend',
+                'Frontend Developer',
                 2000,
-                'Developer',
+                'Desarrollador Web',
                 2000,
                 ]}
                 speed={25}
@@ -53,7 +53,7 @@ const Home = () => {
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
             className='mb-8 max-w-lg mx-auto md:mx-0'>
-              A passionate Front-end Developer.<br /> Based in Aragua, Venezuela 📍.
+              Construyamos juntos la pagina/aplicacción que deseas.<br /> Aragua, Venezuela 📍.
             </motion.p>
             <motion.div 
             variants={fadeIn('up', 0.6)} 
@@ -67,10 +67,10 @@ const Home = () => {
               smooth={true} 
               activeClass='active' 
               spy={true}>
-                Contact me
+                Contáctame
               </Link>
               <a href='https://drive.google.com/file/d/1nwkZdE0bPKnT9csTklZUIN9pMbK-zQyL/view' rel='noreferrer' target='_blank' className='text-gradient btn-link'>
-                Download CV
+                Ver Currículum
               </a>
             </motion.div>
             {/* Socials */}
@@ -83,6 +83,12 @@ const Home = () => {
               <a href='https://www.linkedin.com/in/rauljariasz/' rel='noreferrer' target='_blank'>
                 <FaLinkedin />
               </a>
+              <a href='https://wa.me/qr/7HNPJPAPNTXYJ1' rel='noreferrer' target='_blank'>
+              <IoLogoWhatsapp />
+              </a>
+              <a href='https://www.instagram.com/rauljariasz/' target='_blank' rel='noreferrer'>
+                <AiFillInstagram />
+              </a>
               <a href='https://github.com/rauljariasz' rel='noreferrer' target='_blank'>
                 <FaGithub />
               </a>
@@ -91,9 +97,6 @@ const Home = () => {
               </a>
               <a href='https://www.frontendmentor.io/profile/rauljariasz' target='_blank' rel='noreferrer'>
                 <SiFrontendmentor />
-              </a>
-              <a href='https://www.instagram.com/rauljariasz/' target='_blank' rel='noreferrer'>
-                <AiFillInstagram />
               </a>
             </motion.div>
           </div>

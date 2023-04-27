@@ -22,7 +22,7 @@ const Projects = () => {
     {
       titulo: 'Portfolio',
       image: project1,
-      description: 'Personal project carried out with the purpose of offering my services as a developer.',
+      description: 'Proyecto personal realizado con el fin de ofrecer mis servicios como desarrollador.',
       liveSite: '#',
       codeSite: 'https://github.com/rauljariasz/portfolio',
       /* Max 4 */
@@ -31,7 +31,7 @@ const Projects = () => {
     {
       titulo: 'FM Library',
       image: project2,
-      description: 'FM Library is a personal project, made to show all my challenges in Frontend-Mentor, on a single page.',
+      description: 'FM Library es un proyecto personal, hecho para mostrar todos mis desafíos en Frontend-Mentor, en una sola página.',
       liveSite: 'https://frontendmentor-library.vercel.app/',
       codeSite: 'https://github.com/rauljariasz/FrontendMentor-Library',
       /* Max 4 */
@@ -54,17 +54,17 @@ const Projects = () => {
               </div>
               <div className='flex justify-evenly w-full h-[46px] mt-[20px]'>
                 <a href={project.liveSite} target='_blank' rel='noreferrer' className='h-full w-auto'>
-                  <button className='btn h-full w-[140px] btn:hover'>Live Site</button>
+                  <button className='btn h-full w-[140px] btn:hover'>Ver Sitio</button>
                 </a>
                 <a href={project.codeSite} target='_blank' rel='noreferrer' className='h-full w-auto'>
-                  <button className='btn h-full w-[140px] btn:hover'>Code</button>
+                  <button className='btn h-full w-[140px] btn:hover'>Ver Codigo</button>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div className='w-full text-center lg-[h-35%]'>
-          <p className='font-semibold mt-[15px]'>Build with</p>
+          <p className='font-semibold mt-[15px]'>Realizado con:</p>
           <div className='flex overflow-x-scroll scrollbar-hide mt-[15px] justify-evenly'>
             {project.buildWith.map(skill => {
               return (

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col items-center justify-center '>
           <h2 className='h2 pt-[20px] text-[22px] mb-[7px]'>Portfolio</h2>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+          <p>Gracias por visitar mi portafolio personal. Conéctate conmigo a través de las redes sociales.</p>
           <div
           className='flex text-[30px] gap-x-6 max-w-max mx-auto lg:mx-0'>
             <a href='https://www.linkedin.com/in/rauljariasz/' rel='noreferrer' target='_blank'>

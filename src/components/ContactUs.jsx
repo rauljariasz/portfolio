@@ -69,7 +69,7 @@ const ContactUs = () => {
               required
               type="text" 
               name="user_name" 
-              placeholder='Your Name'
+              placeholder='Tu nombre'
               className='text-white font-semibold pl-[40px] h-full w-full onFocus peer/name' />
               <i className='absolute text-white/50 text-[18px] left-[15px] top-[10px] peer-focus/name:text-accent'>
                 <FaUser  />
@@ -80,13 +80,13 @@ const ContactUs = () => {
               required
               type="email" 
               name="user_email" 
-              placeholder='Your E-mail'
+              placeholder='Tu correo'
               className='text-white font-semibold pl-[40px] h-full w-full onFocus peer/email' />
               <i className='absolute text-white/50 text-[21px] left-[15px] top-[10px] peer-focus/email:text-accent'>
                 <MdEmail  />
               </i>
             </div>
-            <textarea required name="message" placeholder='Message' className='resize-none onFocus rounded-xl w-[80%] scrollbar-none sm:h-[200px]' />
+            <textarea required name="message" placeholder='Mensaje' className='resize-none onFocus rounded-xl w-[80%] scrollbar-none sm:h-[200px]' />
             <input type="submit" value="Send" className='cursor-pointer btn btn:hover w-[120px]' />
           </form>
           </div>
@@ -101,7 +101,7 @@ const ContactUs = () => {
         ref={tyDiv}>
           <div className='w-full text-center pt-[10px]'>
             <p>
-              E-mail Send.
+              E-mail Enviado.
             </p>
           </div>
 

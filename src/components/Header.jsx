@@ -7,7 +7,7 @@ const Header = () => {
       <div className='container mx-auto'>
         <div className='flex justify-between items-center h-[55px]'>
           <img src={Logo} alt='RJ Logo' className='h-[48px]' /> 
-          <button className='btn btn-sm'>Work with me</button>
+          <button className='btn btn-sm'>Modo claro</button>
         </div>
       </div>
     </header>

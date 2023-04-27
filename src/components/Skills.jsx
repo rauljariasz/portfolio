@@ -95,7 +95,7 @@ const Skills = () => {
           viewport={{once: false, amount: 0.1}}
           className='lg:w-1/2'>
             <p>
-            During my apprenticeship as a front-end Developer I have learned various skills in the following technologies, it should be noted that, to this day, I continue to learn and build to improve my skills every day. Skills and tools:
+              Durante mi aprendizaje como desarrollador front-end he aprendido varias habilidades en las siguientes tecnologías, cabe señalar que, al día de hoy, sigo aprendiendo y construyendo para mejorar mis habilidades todos los días. Habilidades y herramientas:
             </p>
             <img src={imageSkill} alt='Illustration' className='hidden lg:block' />
           </motion.div>
