@@ -1,5 +1,3 @@
-import React from 'react';
-
 /* Icons */
 import { DiScrum, DiHtml5, DiCss3, DiSass, DiReact, DiNpm, DiVisualstudio } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io5';

@@ -1,5 +1,3 @@
-import React from 'react';
-
 /* Imgs */
 import Logo from '../assets/logo.png'
 

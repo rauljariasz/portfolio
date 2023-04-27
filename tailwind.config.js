@@ -1,5 +1,7 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
+    "./index.html",
     './src/**/*.{js,jsx,ts,tsx}',
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
@@ -24,6 +26,7 @@ module.exports = {
       colors: {
         primary: '#0a0a0a',
         accent: '#922',
+        tertiary: '#0000ff'
       },
       backgroundImage: {
         site: "url('./assets/bg.jpg')",
@@ -36,4 +39,5 @@ module.exports = {
     require('tailwind-scrollbar'),
     require('tailwind-scrollbar-hide')
   ],
-};
+}
+

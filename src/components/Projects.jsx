@@ -1,5 +1,3 @@
-import React from 'react';
-
 /* Flowbite */
 import { Carousel } from 'flowbite-react';
 
@@ -12,7 +10,8 @@ import { fadeIn } from '../variants';
 import { AiFillCaretLeft, AiFillCaretRight } from 'react-icons/ai';
 import { DiReact, DiSass } from 'react-icons/di';
 import { SiTailwindcss } from 'react-icons/si';
-import { TbBrandFramerMotion, TbBrandNextjs } from 'react-icons/tb'
+import { TbBrandNextjs } from 'react-icons/tb'
+import { FiFramer } from "react-icons/fi";
 
 /* Imgs */
 import project1 from '../assets/project1.png';
@@ -27,7 +26,7 @@ const Projects = () => {
       liveSite: '#',
       codeSite: 'https://github.com/rauljariasz/portfolio',
       /* Max 4 */
-      buildWith: [<DiReact/>, <SiTailwindcss/>, <TbBrandFramerMotion />]
+      buildWith: [<DiReact key={1}/>, <SiTailwindcss key={2}/>, <FiFramer key={3} />]
     },
     {
       titulo: 'FM Library',
@@ -36,7 +35,7 @@ const Projects = () => {
       liveSite: 'https://frontendmentor-library.vercel.app/',
       codeSite: 'https://github.com/rauljariasz/FrontendMentor-Library',
       /* Max 4 */
-      buildWith: [<TbBrandNextjs/>, <DiReact />, <DiSass/>]
+      buildWith: [<TbBrandNextjs key={1}/>, <DiReact key={2} />, <DiSass key={3}/>]
     }
   ]
   let skillkey = 0;
@@ -107,6 +106,7 @@ const Projects = () => {
             {renderProjects}
           </Carousel>
         </motion.div>
+        
       </div>
     </section>
   );

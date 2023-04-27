@@ -1,5 +1,3 @@
-import React from 'react';
-
 //imgs
 import Image from '../assets/animation.gif';
 //icons
@@ -71,7 +69,7 @@ const Home = () => {
               spy={true}>
                 Contact me
               </Link>
-              <a href='https://drive.google.com/file/d/1Fo6kOYQvDK6CuI9iSxMWyv-7yZ9ohxeH/view' rel='noreferrer' target='_blank' className='text-gradient btn-link'>
+              <a href='https://drive.google.com/file/d/1nwkZdE0bPKnT9csTklZUIN9pMbK-zQyL/view' rel='noreferrer' target='_blank' className='text-gradient btn-link'>
                 Download CV
               </a>
             </motion.div>

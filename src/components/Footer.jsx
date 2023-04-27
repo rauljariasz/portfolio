@@ -1,4 +1,3 @@
-import React from 'react';
 /* icons */
 import { FaLinkedin } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';

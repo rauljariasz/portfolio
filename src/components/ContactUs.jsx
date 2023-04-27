@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 /* EmailsJS */
 import emailjs from '@emailjs/browser';
 // motion
@@ -21,6 +21,7 @@ const ContactUs = () => {
 
   const hideFormDiv = () => {
     formDiv.current.classList.add('hidden')
+    tyDiv.current.classList.add('flex')
     tyDiv.current.classList.remove('hidden')
   }
 
@@ -96,7 +97,7 @@ const ContactUs = () => {
         initial="hidden" 
         whileInView={'show'} 
         viewport={{once: false, amount: 0.1}}
-        className='flex flex-col h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white rounded-xl bg-black hidden'
+        className='flex-col h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white rounded-xl bg-black hidden'
         ref={tyDiv}>
           <div className='w-full text-center pt-[10px]'>
             <p>
