@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
 /* Imgs */
-import imageSkill from '../assets/animation-skills.png';
+import imageSkill from '../assets/animationskills.png';
 
 const Skills = () => {
   const skills = [

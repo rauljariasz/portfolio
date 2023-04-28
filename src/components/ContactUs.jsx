@@ -55,7 +55,7 @@ const ContactUs = () => {
         className='flex flex-col h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white rounded-xl bg-black md:flex-row dark:bg-white dark:border-[2px] dark:border-accent'
         ref={formDiv}>
           {/* Image */}
-          <div className='flex justify-center w-[235px] items-center pt-[10px] h-[234px] md:w-1/2 md:h-[340px] bg-email bg-contain bg-no-repeat bg-center self-center dark:bg-lightEmail'>
+          <div className='flex justify-center w-[235px] items-center pt-[10px] h-[234px] md:w-1/2 md:h-[340px] bg-email bg-contain bg-no-repeat bg-center self-center dark:bg-lightemail'>
           </div>
           {/* Form */}
           <div className='md:w-1/2 h-[60%] md:h-full'>
@@ -102,7 +102,7 @@ const ContactUs = () => {
           </div>
 
           <div className='flex justify-center items-center h-full'>
-            <div className='w-[330px] h-[330px] bg-emailSend bg-contain bg-no-repeat dark:bg-lightEmailSend'></div>
+            <div className='w-[330px] h-[330px] bg-emailsend bg-contain bg-no-repeat dark:bg-lightemailsend'></div>
           </div>
         </motion.div>
       </div>

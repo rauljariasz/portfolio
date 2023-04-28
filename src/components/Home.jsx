@@ -105,7 +105,7 @@ const Home = () => {
           variants={fadeIn('down', 0.5)} 
           initial="hidden" 
           whileInView={'show'} 
-          className='bg-homeIllus hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] min-h-[330px] h-[560px] bg-contain bg-no-repeat bg-center dark:bg-lightHomeIllus'>
+          className='bg-homeillus hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] min-h-[330px] h-[560px] bg-contain bg-no-repeat bg-center dark:bg-lighthomeillus'>
             {/* <img src={Image } alt='Animation gif'/> */}
           </motion.div>
         </div>
