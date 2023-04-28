@@ -32,7 +32,7 @@ export default {
         site: "url(./assets/bg.jpg)",
         sitewhite: "url(./assets/sitebgwhite.jpg)",
         about: "url(./assets/bgabout.png)",
-        aboutlight: "url(.assets/aboutlight.png)",
+        aboutlight: "url(./assets/aboutlight.png)",
         illushome: "url(./assets/animation-home.gif)",
         lighthomeillus: "url(./assets/lightanimation.gif)",
         email: "url(./assets/getintouch.gif)",
