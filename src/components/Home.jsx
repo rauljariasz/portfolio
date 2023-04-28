@@ -106,7 +106,6 @@ const Home = () => {
           initial="hidden" 
           whileInView={'show'} 
           className='bg-homeillus hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] min-h-[330px] h-[560px] bg-contain bg-no-repeat bg-center dark:bg-lighthomeillus'>
-            {/* <img src={Image } alt='Animation gif'/> */}
           </motion.div>
         </div>
       </div>
