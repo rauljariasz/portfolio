@@ -30,15 +30,15 @@ export default {
       },
       backgroundImage: {
         site: "url(./assets/bg.jpg)",
+        sitewhite: "url(./assets/sitebgwhite.jpg)",
         about: "url(./assets/bgabout.png)",
-        sitewhite: "url(./src/assets/sitebgwhite.jpg)",
-        illushome: "url(./src/assets/animation-home.gif)",
-        lighthomeillus: "url(./src/assets/lightanimation.gif)",
-        aboutlight: "url(./src/assets/aboutlight.png)",
-        email: "url(./src/assets/getintouch.gif)",
-        lightemail: "url(./src/assets/lightgetintouch.gif)",
-        emailsend: "url(./src/assets/email.gif)",
-        lightemailsend: "url(./src/assets/lightemail.gif)"
+        aboutlight: "url(.assets/aboutlight.png)",
+        illushome: "url(./assets/animation-home.gif)",
+        lighthomeillus: "url(./assets/lightanimation.gif)",
+        email: "url(./assets/getintouch.gif)",
+        lightemail: "url(./assets/lightgetintouch.gif)",
+        emailsend: "url(./assets/email.gif)",
+        lightemailsend: "url(./assets/lightemail.gif)"
       },
     },
   },
