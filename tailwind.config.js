@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     './src/**/*.{js,jsx,ts,tsx}',
@@ -24,13 +25,20 @@ export default {
     },
     extend: {
       colors: {
-        primary: '#0a0a0a',
+        primary: '#343434',
         accent: '#922',
-        tertiary: '#0000ff'
       },
       backgroundImage: {
         site: "url('./assets/bg.jpg')",
-        about: "url(./assets/bg-about.png)"
+        about: "url(./assets/bg-about.png)",
+        siteWhite: "url('./src/assets/site-bg-white.jpg')",
+        homeIllus: "url('./src/assets/animation.gif')",
+        lightHomeIllus: "url('./src/assets/lightAnimation.gif')",
+        lightAbout: "url('./src/assets/light-bg-about.png')",
+        email: "url('./src/assets/Getintouch.gif')",
+        lightEmail: "url('./src/assets/lightGetintouch.gif')",
+        emailSend: "url('./src/assets/email.gif')",
+        lightEmailSend: "url('./src/assets/lightEmail.gif')"
       },
     },
   },

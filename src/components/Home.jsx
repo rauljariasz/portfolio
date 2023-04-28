@@ -1,5 +1,3 @@
-//imgs
-import Image from '../assets/animation.gif';
 //icons
 import { FaGithub, FaLinkedin, FaHackerrank } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
@@ -15,6 +13,8 @@ import { fadeIn } from '../variants';
 import { Link } from 'react-scroll'
 
 const Home = () => {
+  
+
   return (
     <section id='home' className='min-h-[85vh] md:min-h-[78vh] flex items-center'>
       <div className='container mx-auto'>
@@ -26,8 +26,8 @@ const Home = () => {
             initial="hidden" 
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='text-[55px] font-bold leading-[0.8] md:text-[110px]'>
-              Raul <span>Arias</span>
+            className='text-[55px] font-bold leading-[0.8] md:text-[110px] dark:text-primary'>
+              Raul Arias
             </motion.h1>
             <motion.div 
             variants={fadeIn('up', 0.4)} 
@@ -52,7 +52,7 @@ const Home = () => {
             initial="hidden" 
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='mb-8 max-w-lg mx-auto md:mx-0'>
+            className='mb-8 max-w-lg mx-auto md:mx-0 dark:text-primary'>
               Construyamos juntos la pagina/aplicacción que deseas.<br /> Aragua, Venezuela 📍.
             </motion.p>
             <motion.div 
@@ -63,13 +63,13 @@ const Home = () => {
             className='flex max-w-max gap-x-6 items-center mb-12 mx-auto md:mx-0'>
               <Link 
               to='contact' 
-              className='cursor-pointer btn btn-lg flex items-center justify-center' 
+              className='cursor-pointer btn btn-lg flex items-center justify-center dark:bg-white dark:text-black dark:hover:bg-primary dark:hover:text-white' 
               smooth={true} 
               activeClass='active' 
               spy={true}>
                 Contáctame
               </Link>
-              <a href='https://drive.google.com/file/d/1nwkZdE0bPKnT9csTklZUIN9pMbK-zQyL/view' rel='noreferrer' target='_blank' className='text-gradient btn-link'>
+              <a href='https://drive.google.com/file/d/1nwkZdE0bPKnT9csTklZUIN9pMbK-zQyL/view' rel='noreferrer' target='_blank' className='text-gradient btn-link dark:light-text-gradient'>
                 Ver Currículum
               </a>
             </motion.div>
@@ -81,22 +81,22 @@ const Home = () => {
             viewport={{once: false, amount: 0.2}}  
             className='flex text-[30px] gap-x-6 max-w-max mx-auto md:mx-0'>
               <a href='https://www.linkedin.com/in/rauljariasz/' rel='noreferrer' target='_blank'>
-                <FaLinkedin />
+                <FaLinkedin className='dark:text-accent hover:translate-y-2 transition-all' />
               </a>
               <a href='https://wa.me/qr/7HNPJPAPNTXYJ1' rel='noreferrer' target='_blank'>
-              <IoLogoWhatsapp />
+              <IoLogoWhatsapp className='dark:text-accent hover:translate-y-2 transition-all' />
               </a>
               <a href='https://www.instagram.com/rauljariasz/' target='_blank' rel='noreferrer'>
-                <AiFillInstagram />
+                <AiFillInstagram className='dark:text-accent hover:translate-y-2 transition-all' />
               </a>
               <a href='https://github.com/rauljariasz' rel='noreferrer' target='_blank'>
-                <FaGithub />
+                <FaGithub className='dark:text-accent hover:translate-y-2 transition-all' />
               </a>
               <a href='https://www.hackerrank.com/rauljariasz' target='_blank' rel='noreferrer'>
-                <FaHackerrank />
+                <FaHackerrank className='dark:text-accent hover:translate-y-2 transition-all' />
               </a>
               <a href='https://www.frontendmentor.io/profile/rauljariasz' target='_blank' rel='noreferrer'>
-                <SiFrontendmentor />
+                <SiFrontendmentor className='dark:text-accent hover:translate-y-2 transition-all' />
               </a>
             </motion.div>
           </div>
@@ -105,8 +105,8 @@ const Home = () => {
           variants={fadeIn('down', 0.5)} 
           initial="hidden" 
           whileInView={'show'} 
-          className='hidden md:flex flex-1 max-w-[320px] md:max-w-[482px]'>
-            <img src={Image} alt='Animation gif' />
+          className='bg-homeIllus hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] min-h-[330px] h-[560px] bg-contain bg-no-repeat bg-center dark:bg-lightHomeIllus'>
+            {/* <img src={Image } alt='Animation gif'/> */}
           </motion.div>
         </div>
       </div>

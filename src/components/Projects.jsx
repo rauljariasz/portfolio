@@ -41,8 +41,8 @@ const Projects = () => {
   let skillkey = 0;
   const renderProjects = projects.map((project) => {
     return (
-      <div key={`${project.titulo}-1`} className="flex flex-col h-full w-full items-center justify-start bg-black/50">
-        <h3 className='text-gradient pt-[10px]'>{project.titulo}</h3>
+      <div key={`${project.titulo}-1`} className="flex flex-col h-full w-full items-center justify-start bg-black/50 dark:bg-primary/40">
+        <h3 className='text-gradient pt-[10px] dark:light-text-gradient'>{project.titulo}</h3>
         <div className='md:h-[65%]'>
           <div className='flex flex-col md:flex-row md:p-[20px] md:gap-[10px]'>
             <img src={project.image} alt='' className='w-[320px] border-[1px] border-white/30 rounded-lg md:w-[60%]' />
@@ -54,10 +54,10 @@ const Projects = () => {
               </div>
               <div className='flex justify-evenly w-full h-[46px] mt-[20px]'>
                 <a href={project.liveSite} target='_blank' rel='noreferrer' className='h-full w-auto'>
-                  <button className='btn h-full w-[140px] btn:hover'>Ver Sitio</button>
+                  <button className='btn h-full w-[140px] btn:hover dark:bg-white dark:text-black dark:hover:bg-primary dark:hover:text-white'>Ver Sitio</button>
                 </a>
                 <a href={project.codeSite} target='_blank' rel='noreferrer' className='h-full w-auto'>
-                  <button className='btn h-full w-[140px] btn:hover'>Ver Codigo</button>
+                  <button className='btn h-full w-[140px] btn:hover dark:bg-white dark:text-black dark:hover:bg-primary dark:hover:text-white'>Ver Codigo</button>
                 </a>
               </div>
             </div>
@@ -80,7 +80,7 @@ const Projects = () => {
   })
 
   return (
-    <section id='projects'>
+    <section id='projects' className='h-[100vh] pt-[20px] mt-[60px]'>
       <div className='container mx-auto'>
         <motion.h2 
         variants={fadeIn('left', 0.4)} 
@@ -88,7 +88,7 @@ const Projects = () => {
         whileInView={'show'} 
         viewport={{once: false, amount: 0.1}}
         className='h2 text-accent text-center pt-[45px]'>
-          PROJECTS
+          Proyectos
         </motion.h2>
 
         {/* Carousel */}
@@ -97,12 +97,12 @@ const Projects = () => {
         initial="hidden" 
         whileInView={'show'} 
         viewport={{once: false, amount: 0.1}}
-        className="h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white/30 rounded-xl">
+        className="h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white/30 rounded-xl ">
           <Carousel 
           slide={false} 
           indicators={false} 
-          leftControl={<div className='text-[30px] text-accent bg-white rounded-lg'><AiFillCaretLeft /></div>}
-          rightControl={<div className='text-[30px] text-accent bg-white rounded-lg'><AiFillCaretRight /></div>}>
+          leftControl={<div className='text-[30px] text-accent bg-white rounded-lg dark:bg-accent dark:text-white'><AiFillCaretLeft /></div>}
+          rightControl={<div className='text-[30px] text-accent bg-white rounded-lg dark:bg-accent dark:text-white'><AiFillCaretRight /></div>}>
             {renderProjects}
           </Carousel>
         </motion.div>

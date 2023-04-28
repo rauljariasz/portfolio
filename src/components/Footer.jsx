@@ -5,7 +5,7 @@ import { IoLogoWhatsapp } from 'react-icons/io'
 
 const Footer = () => {
   return (
-    <footer className='h-[250px] bg-accent/30 mt-[50px]'>
+    <footer className='h-[280px] sm:h-[250px] bg-accent/30 mt-[50px] dark:bg-accent'>
       <div className='container mx-auto'>
         <div className='flex flex-col items-center justify-center '>
           <h2 className='h2 pt-[20px] text-[22px] mb-[7px]'>Portfolio</h2>

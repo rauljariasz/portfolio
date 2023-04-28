@@ -67,7 +67,7 @@ const Skills = () => {
 
   const renderSkills = skills.map((skill) => {
     return (
-    <div key={`${skill.name}-1`} className='w-[100px] h-auto bg-white/10 rounded-lg flex flex-col items-center text-[60px] border-t-[2px] transition-all duration-300 ease-in hover:border-b-[2px] hover:border-white hover:border-t-[0px] hover:translate-y-[2px] hover:text-accent pt-[3px]'>
+    <div key={`${skill.name}-1`} className='w-[100px] h-auto bg-white/10 rounded-lg flex flex-col items-center text-[60px] border-t-[2px] transition-all duration-300 ease-in hover:border-b-[2px] hover:border-white hover:border-t-[0px] hover:translate-y-[2px] hover:text-accent pt-[3px] dark:bg-primary/40 dark:border-accent dark:text-accent dark:hover:border-white dark:hover:text-white'>
       {skill.icon}
       <p className='text-lg'>{skill.name}</p>
     </div>
@@ -83,7 +83,7 @@ const Skills = () => {
         initial="hidden" 
         whileInView={'show'} 
         viewport={{once: false, amount: 0.1}}
-        className='h2 text-accent text-center lg:pb-[45px]'>Skills</motion.h2>
+        className='h2 text-accent text-center lg:pb-[45px]'>Habilidades</motion.h2>
 
         {/* Content */}
         <div className='flex flex-col gap-y-10 items-center justify-center lg:flex-row  lg:gap-x-20 lg:gap-y-0'>
@@ -94,7 +94,7 @@ const Skills = () => {
           whileInView={'show'} 
           viewport={{once: false, amount: 0.1}}
           className='lg:w-1/2'>
-            <p>
+            <p className='dark:text-primary'>
               Durante mi aprendizaje como desarrollador front-end he aprendido varias habilidades en las siguientes tecnologías, cabe señalar que, al día de hoy, sigo aprendiendo y construyendo para mejorar mis habilidades todos los días. Habilidades y herramientas:
             </p>
             <img src={imageSkill} alt='Illustration' className='hidden lg:block' />

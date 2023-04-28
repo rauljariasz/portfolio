@@ -5,9 +5,6 @@ import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 // variant
 import { fadeIn } from '../variants';
-/* Img */
-import email from '../assets/Getintouch.gif';
-import emailSend from '../assets/email.gif';
 /* icons */
 import { FaUser } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
@@ -46,7 +43,7 @@ const ContactUs = () => {
           whileInView={'show'} 
           viewport={{once: false, amount: 0.1}}
           className='h2 text-accent text-center pt-[45px]'>
-            GET IT TOUCH
+            Contáctame
         </motion.h2>
 
 
@@ -55,11 +52,10 @@ const ContactUs = () => {
         initial="hidden" 
         whileInView={'show'} 
         viewport={{once: false, amount: 0.1}}
-        className='flex flex-col h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white rounded-xl bg-black md:flex-row'
+        className='flex flex-col h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white rounded-xl bg-black md:flex-row dark:bg-white dark:border-[2px] dark:border-accent'
         ref={formDiv}>
           {/* Image */}
-          <div className='flex justify-center items-center pt-[10px] h-[40%] md:w-1/2 md:h-full'>
-            <img src={email} alt='Email' className='h-full max-h-[330px]' />
+          <div className='flex justify-center w-[235px] items-center pt-[10px] h-[234px] md:w-1/2 md:h-[340px] bg-email bg-contain bg-no-repeat bg-center self-center dark:bg-lightEmail'>
           </div>
           {/* Form */}
           <div className='md:w-1/2 h-[60%] md:h-full'>
@@ -70,7 +66,7 @@ const ContactUs = () => {
               type="text" 
               name="user_name" 
               placeholder='Tu nombre'
-              className='text-white font-semibold pl-[40px] h-full w-full onFocus peer/name' />
+              className='text-white font-semibold pl-[40px] h-full w-full onFocus peer/name dark:bg-primary/40 dark:text-accent placeholder:text-primary' />
               <i className='absolute text-white/50 text-[18px] left-[15px] top-[10px] peer-focus/name:text-accent'>
                 <FaUser  />
               </i>
@@ -81,13 +77,13 @@ const ContactUs = () => {
               type="email" 
               name="user_email" 
               placeholder='Tu correo'
-              className='text-white font-semibold pl-[40px] h-full w-full onFocus peer/email' />
+              className='text-white font-semibold pl-[40px] h-full w-full onFocus peer/email dark:bg-primary/40 dark:text-accent placeholder:text-primary' />
               <i className='absolute text-white/50 text-[21px] left-[15px] top-[10px] peer-focus/email:text-accent'>
                 <MdEmail  />
               </i>
             </div>
-            <textarea required name="message" placeholder='Mensaje' className='resize-none onFocus rounded-xl w-[80%] scrollbar-none sm:h-[200px]' />
-            <input type="submit" value="Send" className='cursor-pointer btn btn:hover w-[120px]' />
+            <textarea required name="message" placeholder='Mensaje' className='resize-none onFocus rounded-xl w-[80%] scrollbar-none sm:h-[200px] dark:bg-primary/40 dark:text-accent placeholder:text-primary' />
+            <input type="submit" value="Enviar" className='cursor-pointer btn btn:hover w-[120px] dark:bg-white dark:text-black dark:hover:bg-primary dark:hover:text-white' />
           </form>
           </div>
         </motion.div>
@@ -97,16 +93,16 @@ const ContactUs = () => {
         initial="hidden" 
         whileInView={'show'} 
         viewport={{once: false, amount: 0.1}}
-        className='flex-col h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white rounded-xl bg-black hidden'
+        className='flex-col h-[75vh] w-full max-w-[800px] mx-auto border-y-[2px] border-white rounded-xl bg-black hidden dark:bg-white dark:border-[2px] dark:border-accent'
         ref={tyDiv}>
           <div className='w-full text-center pt-[10px]'>
-            <p>
+            <p className='dark:text-primary'>
               E-mail Enviado.
             </p>
           </div>
 
           <div className='flex justify-center items-center h-full'>
-            <img src={emailSend} alt='Email' className='h-full max-h-[330px]' />
+            <div className='w-[330px] h-[330px] bg-emailSend bg-contain bg-no-repeat dark:bg-lightEmailSend'></div>
           </div>
         </motion.div>
       </div>
